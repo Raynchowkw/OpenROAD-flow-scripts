@@ -434,7 +434,8 @@ ifeq ($(USE_WXL),)
 endif
 	echo "outputDRC:$(REPORTS_DIR)/5_route_drc.rpt" >> $@
 	echo "outputMaze:$(RESULTS_DIR)/maze.log" >> $@
-	echo "threads:$(NUM_CORES)" >> $@
+	#echo "threads:$(NUM_CORES)" >> $@
+	echo "threads:1" >> $@
 	echo "cpxthreads:1" >> $@
 	echo "verbose:1" >> $@
 	echo "gap:0" >> $@
